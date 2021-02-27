@@ -27,7 +27,9 @@ jobs:
     - name: Install dependencies
       run: poetry install
     - name: Lint with flake8
-      run: poetry run flake8 . --count --show-source --max-complexity=10 --max-line-length=80 --statistics
+      run: |
+        poetry run pip install flake8
+        poetry run flake8 . --count --show-source --max-complexity=10 --max-line-length=80 --statistics
     - name: Run flake8
       uses: suo/flake8-github-action@releases/v1
       with:
