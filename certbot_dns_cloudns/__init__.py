@@ -27,13 +27,13 @@ credentials.
    # Alternatively, one of the following two options can be set:
    # dns_cloudns_sub_auth_id=1234
    # dns_cloudns_sub_auth_user=foobar
-   
-   # API password 
+
+   # API password
    dns_cloudns_auth_password=password1
 
 The path to this file can be provided interactively or using the
 ``--dns-cloudns-credentials`` command-line argument. Certbot records the
-path to this file for use during renewal, but does not store the file's 
+path to this file for use during renewal, but does not store the file's
 contents.
 .. caution::
    You should protect your credentials, as they can be used to potentially
